@@ -221,27 +221,31 @@
       </div>
 
       <!-- Wards → Panchayat section -->
-      <div onclick="show('panchayat',document.querySelectorAll('nav a')[1])" style="background:linear-gradient(135deg,#1565c0,#1976d2);color:#fff;border-radius:14px;padding:18px 14px;text-align:center;box-shadow:0 4px 14px rgba(21,101,192,.3);cursor:pointer;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(21,101,192,.4)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 14px rgba(21,101,192,.3)'">
-        <div style="font-size:22px;margin-bottom:3px">🏛️</div>
-        <div style="font-size:22px;font-weight:700">17</div>
-        <div style="font-size:10px;opacity:.85;text-transform:uppercase;letter-spacing:.5px;margin-top:3px">Wards</div>
-        <div style="font-size:9px;opacity:.7;margin-top:4px">Click for details →</div>
+      <div onclick="show('panchayat',document.querySelectorAll('nav a')[1])" style="display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;padding:8px" onmouseover="this.querySelector('div').style.transform='scale(1.08)'" onmouseout="this.querySelector('div').style.transform=''">
+        <div style="background:linear-gradient(135deg,#1565c0,#1976d2);color:#fff;width:120px;height:120px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(21,101,192,.5);transition:transform .2s;border:4px solid #90caf9">
+          <div style="font-size:26px">🏛️</div>
+          <div style="font-size:24px;font-weight:700;line-height:1.2">17</div>
+          <div style="font-size:9px;opacity:.9;text-transform:uppercase;letter-spacing:.5px">Wards</div>
+        </div>
+        <div style="font-size:10px;color:#555;margin-top:8px;font-weight:600">Click for details →</div>
       </div>
-
       <!-- Temples → Temples section -->
-      <div onclick="show('temples',document.querySelectorAll('nav a')[4])" style="background:linear-gradient(135deg,#e65100,#f57c00);color:#fff;border-radius:14px;padding:18px 14px;text-align:center;box-shadow:0 4px 14px rgba(230,81,0,.3);cursor:pointer;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(230,81,0,.4)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 14px rgba(230,81,0,.3)'">
-        <div style="font-size:22px;margin-bottom:3px">🛕</div>
-        <div style="font-size:22px;font-weight:700">4</div>
-        <div style="font-size:10px;opacity:.85;text-transform:uppercase;letter-spacing:.5px;margin-top:3px">Temples</div>
-        <div style="font-size:9px;opacity:.7;margin-top:4px">Click for details →</div>
+      <div onclick="show('temples',document.querySelectorAll('nav a')[4])" style="display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;padding:8px" onmouseover="this.querySelector('div').style.transform='scale(1.08)'" onmouseout="this.querySelector('div').style.transform=''">
+        <div style="background:linear-gradient(135deg,#e65100,#f57c00);color:#fff;width:120px;height:120px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(230,81,0,.5);transition:transform .2s;border:4px solid #ffcc80">
+          <div style="font-size:26px">🛕</div>
+          <div style="font-size:24px;font-weight:700;line-height:1.2">4</div>
+          <div style="font-size:9px;opacity:.9;text-transform:uppercase;letter-spacing:.5px">Temples</div>
+        </div>
+        <div style="font-size:10px;color:#555;margin-top:8px;font-weight:600">Click for details →</div>
       </div>
-
       <!-- Schools → Schools section -->
-      <div onclick="show('schools',document.querySelectorAll('nav a')[3])" style="background:linear-gradient(135deg,#6a1b9a,#8e24aa);color:#fff;border-radius:14px;padding:18px 14px;text-align:center;box-shadow:0 4px 14px rgba(106,27,154,.3);cursor:pointer;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(106,27,154,.4)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 14px rgba(106,27,154,.3)'">
-        <div style="font-size:22px;margin-bottom:3px">🏫</div>
-        <div style="font-size:22px;font-weight:700">3</div>
-        <div style="font-size:10px;opacity:.85;text-transform:uppercase;letter-spacing:.5px;margin-top:3px">Schools</div>
-        <div style="font-size:9px;opacity:.7;margin-top:4px">Click for details →</div>
+      <div onclick="show('schools',document.querySelectorAll('nav a')[3])" style="display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;padding:8px" onmouseover="this.querySelector('div').style.transform='scale(1.08)'" onmouseout="this.querySelector('div').style.transform=''">
+        <div style="background:linear-gradient(135deg,#6a1b9a,#8e24aa);color:#fff;width:120px;height:120px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(106,27,154,.5);transition:transform .2s;border:4px solid #ce93d8">
+          <div style="font-size:26px">🏫</div>
+          <div style="font-size:24px;font-weight:700;line-height:1.2">3</div>
+          <div style="font-size:9px;opacity:.9;text-transform:uppercase;letter-spacing:.5px">Schools</div>
+        </div>
+        <div style="font-size:10px;color:#555;margin-top:8px;font-weight:600">Click for details →</div>
       </div>
 
     </div>
