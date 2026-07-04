@@ -193,26 +193,28 @@
     <!-- QUICK STATS BANNER — clickable, reordered: Population, Male, Female, Wards, Temples, Schools -->
     <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:24px">
 
-      <!-- Total Population → Population section -->
-      <div onclick="show('population',document.querySelectorAll('nav a')[2])" style="background:linear-gradient(135deg,#1a6b3a,#2d9b5a);color:#fff;border-radius:14px;padding:18px 14px;text-align:center;box-shadow:0 4px 14px rgba(26,107,58,.3);cursor:pointer;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(26,107,58,.4)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 14px rgba(26,107,58,.3)'">
-        <div style="font-size:22px;margin-bottom:3px">👥</div>
-        <div style="font-size:22px;font-weight:700">7,868</div>
-        <div style="font-size:10px;opacity:.85;text-transform:uppercase;letter-spacing:.5px;margin-top:3px">Total Population</div>
-        <div style="font-size:9px;opacity:.7;margin-top:4px">Click for details →</div>
-      </div>
-
-      <!-- Male — not clickable -->
-      <div style="background:linear-gradient(135deg,#00695c,#00897b);color:#fff;border-radius:14px;padding:10px 8px;text-align:center;box-shadow:0 4px 14px rgba(0,105,92,.3)">
-        <div style="font-size:22px;margin-bottom:3px">👨</div>
-        <div style="font-size:22px;font-weight:700">4,241</div>
-        <div style="font-size:10px;opacity:.85;text-transform:uppercase;letter-spacing:.5px;margin-top:3px">Male</div>
-      </div>
-
-      <!-- Female — not clickable -->
-      <div style="background:linear-gradient(135deg,#ad1457,#d81b60);color:#fff;border-radius:14px;padding:10px 8px;text-align:center;box-shadow:0 4px 14px rgba(173,20,87,.3)">
-        <div style="font-size:22px;margin-bottom:3px">👩</div>
-        <div style="font-size:22px;font-weight:700">3,627</div>
-        <div style="font-size:10px;opacity:.85;text-transform:uppercase;letter-spacing:.5px;margin-top:3px">Female</div>
+      <!-- Total Population combined card with Male & Female inside -->
+      <div onclick="show('population',document.querySelectorAll('nav a')[2])" style="grid-column:span 3;background:linear-gradient(135deg,#1a6b3a,#2d9b5a);color:#fff;border-radius:14px;padding:14px 18px;box-shadow:0 4px 14px rgba(26,107,58,.3);cursor:pointer;transition:transform .2s,box-shadow .2s" onmouseover="this.style.transform='translateY(-4px)';this.style.boxShadow='0 8px 24px rgba(26,107,58,.4)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 14px rgba(26,107,58,.3)'">
+        <div style="text-align:center;margin-bottom:10px">
+          <div style="font-size:22px;margin-bottom:2px">👥</div>
+          <div style="font-size:28px;font-weight:700;line-height:1">7,868</div>
+          <div style="font-size:11px;opacity:.85;text-transform:uppercase;letter-spacing:.5px;margin-top:3px">Total Population</div>
+          <div style="font-size:9px;opacity:.7;margin-top:3px">Click for details →</div>
+        </div>
+        <div style="border-top:1px solid rgba(255,255,255,0.3);margin:8px 0"></div>
+        <div style="display:flex;justify-content:space-around;align-items:center">
+          <div style="text-align:center">
+            <div style="font-size:18px">👨</div>
+            <div style="font-size:20px;font-weight:700;margin-top:2px">4,241</div>
+            <div style="font-size:10px;opacity:.85;text-transform:uppercase;letter-spacing:.4px;margin-top:2px">Male</div>
+          </div>
+          <div style="width:1px;height:40px;background:rgba(255,255,255,0.3)"></div>
+          <div style="text-align:center">
+            <div style="font-size:18px">👩</div>
+            <div style="font-size:20px;font-weight:700;margin-top:2px">3,627</div>
+            <div style="font-size:10px;opacity:.85;text-transform:uppercase;letter-spacing:.4px;margin-top:2px">Female</div>
+          </div>
+        </div>
       </div>
 
       <!-- Wards → Panchayat section -->
