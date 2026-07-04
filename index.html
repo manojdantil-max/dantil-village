@@ -614,5 +614,229 @@
 
     </div>
   </div>
+  <!-- ══ FACILITIES ══ -->
+  <div id="facilities" class="section">
+    <div class="section-title"><span>🏗️</span> Village Facilities</div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><span>🏥</span> Health</div>
+        <div class="info-row"><div class="icon">✅</div><div id="f-health1">Sub Health Centre (PHC) in village</div></div>
+        <div class="info-row"><div class="icon">✅</div><div id="f-health2">ASHA Worker assigned to village</div></div>
+        <div class="info-row"><div class="icon">🏥</div><div id="f-health3">Nearest hospital: Within the village</div></div>
+      </div>
+      <div class="card">
+        <div class="card-title"><span>💧</span> Water & Sanitation</div>
+        <div class="info-row"><div class="icon">✅</div><div id="f-water1">Piped water supply (partially operational)</div></div>
+        <div class="info-row"><div class="icon">✅</div><div id="f-water2">Hand pumps installed: 8 across village</div></div>
+        <div class="info-row"><div class="icon">✅</div><div id="f-water3">ODF (Open Defecation Free) village status achieved</div></div>
+      </div>
+      <div class="card">
+        <div class="card-title"><span>⚡</span> Power & Roads</div>
+        <div class="info-row"><div class="icon">✅</div><div id="f-power1">24-hour electricity supply to all households</div></div>
+        <div class="info-row"><div class="icon">✅</div><div id="f-power2">Pucca (concrete) road connecting to highway</div></div>
+        <div class="info-row"><div class="icon">🔧</div><div id="f-power3">Internal village roads: improvement work in progress</div></div>
+      </div>
+      <div class="card">
+        <div class="card-title"><span>📡</span> Connectivity</div>
+        <div class="info-row"><div class="icon">✅</div><div id="f-conn1">Mobile network available: Jio, Airtel</div></div>
+        <div class="info-row"><div class="icon">✅</div><div id="f-conn2">Common Service Centre (CSC / Jan Seva Kendra)</div></div>
+        <div class="info-row"><div class="icon">📮</div><div id="f-conn3">Post office: Within the village</div></div>
+      </div>
+      <div class="card">
+        <div class="card-title"><span>🏦</span> Banking</div>
+        <div class="info-row"><div class="icon">✅</div><div id="f-bank1">Bank Mitra / Business Correspondent in village</div></div>
+        <div class="info-row"><div class="icon">🏦</div><div id="f-bank2">Nearest bank branch (SBI): Within the village</div></div>
+        <div class="info-row"><div class="icon">✅</div><div id="f-bank3">Jan Dhan accounts — majority of families enrolled</div></div>
+      </div>
+      <div class="card">
+        <div class="card-title"><span>🌳</span> Other Facilities</div>
+        <div class="info-row"><div class="icon">✅</div><div id="f-other1">Village Chaupal (Community meeting hall)</div></div>
+        <div class="info-row"><div class="icon">✅</div><div id="f-other2">Bus stop on the main road</div></div>
+        <div class="info-row"><div class="icon">✅</div><div id="f-other3">Cremation ground — properly maintained</div></div>
+      </div>
+    </div>
+  </div>
 
-  
+  <!-- ══ GALLERY ══ -->
+  <div id="gallery" class="section">
+    <div class="section-title"><span>🖼️</span> Photo Gallery</div>
+    <div style="font-size:13px;color:#555;margin-bottom:14px;">📸 Total <strong>31 photos</strong> — click any photo to view full size</div>
+    <div class="gallery-filter">
+      <button class="filter-btn active" onclick="filterGallery('all',this)">🌿 All Photos</button>
+      <button class="filter-btn" onclick="filterGallery('temple',this)">🛕 Temples</button>
+      <button class="filter-btn" onclick="filterGallery('village',this)">🏘️ Village</button>
+      <button class="filter-btn" onclick="filterGallery('facilities',this)">🏗️ Facilities</button>
+      <button class="filter-btn" onclick="filterGallery('education',this)">🏫 Education</button>
+      <button class="filter-btn" onclick="filterGallery('community',this)">👥 Community</button>
+    </div>
+    <div class="gallery-grid" id="gallery-grid">
+      <div class="gallery-card" data-cat="village" onclick="openLightbox('images/Village_overview.jpg','Aerial View of Dantil Village','Village')"><img src="images/Village_overview.jpg" alt="Aerial view"><div class="gallery-caption"><div class="cap-title">Aerial View of Dantil</div><span class="cap-tag">🏘️ Village</span></div></div>
+      <div class="gallery-card" data-cat="village" onclick="openLightbox('images/Village_Centre.jpg','Village Centre, Dantil','Village')"><img src="images/Village_Centre.jpg" alt="Village Centre"><div class="gallery-caption"><div class="cap-title">Village Centre</div><span class="cap-tag">🏘️ Village</span></div></div>
+      <div class="gallery-card" data-cat="village" onclick="openLightbox('images/Village_View_Backward.jpg','Village Backward View','Village')"><img src="images/Village_View_Backward.jpg" alt="Village backward"><div class="gallery-caption"><div class="cap-title">Village View — Backward Side</div><span class="cap-tag">🏘️ Village</span></div></div>
+      <div class="gallery-card" data-cat="village" onclick="openLightbox('images/Village_View.jpg','Gaushala & Mountain View','Village')"><img src="images/Village_View.jpg" alt="Village view"><div class="gallery-caption"><div class="cap-title">Gaushala & Mountain View</div><span class="cap-tag">🏘️ Village</span></div></div>
+      <div class="gallery-card" data-cat="village" onclick="openLightbox('images/Ancient_Homes.jpg','Ancient Homes of Dantil','Village')"><img src="images/Ancient_Homes.jpg" alt="Ancient homes"><div class="gallery-caption"><div class="cap-title">Ancient Homes of Dantil</div><span class="cap-tag">🏠 Heritage</span></div></div>
+      <div class="gallery-card" data-cat="village" onclick="openLightbox('images/Village_Pond.jpg','Village Pond, Dantil','Village')"><img src="images/Village_Pond.jpg" alt="Village pond"><div class="gallery-caption"><div class="cap-title">Village Pond</div><span class="cap-tag">🏘️ Village</span></div></div>
+      <div class="gallery-card" data-cat="village" onclick="openLightbox('images/Gaushala.jpg','Shri Krishna Gaushala','Village')"><img src="images/Gaushala.jpg" alt="Gaushala"><div class="gallery-caption"><div class="cap-title">Shri Krishna Gaushala</div><span class="cap-tag">🐄 Gaushala</span></div></div>
+      <div class="gallery-card" data-cat="temple" onclick="openLightbox('images/Maa_Mansa_Devi.jpg','Maa Mansa Devi Mandir','Temple')"><img src="images/Maa_Mansa_Devi.jpg" alt="Maa Mansa Devi"><div class="gallery-caption"><div class="cap-title">Maa Mansa Devi Mandir</div><span class="cap-tag">🛕 Temple</span></div></div>
+      <div class="gallery-card" data-cat="temple" onclick="openLightbox('images/Maa_Mansa_Devi_View.jpg','Maa Mansa Devi Hilltop','Temple')"><img src="images/Maa_Mansa_Devi_View.jpg" alt="Mansa hilltop"><div class="gallery-caption"><div class="cap-title">Maa Mansa Devi — Hilltop View</div><span class="cap-tag">🛕 Temple</span></div></div>
+      <div class="gallery-card" data-cat="temple" onclick="openLightbox('images/Mansa_Mata.jpg','Mansa Mata Temple','Temple')"><img src="images/Mansa_Mata.jpg" alt="Mansa Mata"><div class="gallery-caption"><div class="cap-title">Mansa Mata Temple</div><span class="cap-tag">🛕 Temple</span></div></div>
+      <div class="gallery-card" data-cat="temple" onclick="openLightbox('images/Bhomiya_Baba.jpg','Bhomiya Baba Temple','Temple')"><img src="images/Bhomiya_Baba.jpg" alt="Bhomiya Baba"><div class="gallery-caption"><div class="cap-title">Bhomiya Baba Temple</div><span class="cap-tag">🛕 Temple</span></div></div>
+      <div class="gallery-card" data-cat="facilities" onclick="openLightbox('images/Gram_Panchayat.jpg','Gram Panchayat Office','Facilities')"><img src="images/Gram_Panchayat.jpg" alt="Gram Panchayat"><div class="gallery-caption"><div class="cap-title">Gram Panchayat Office</div><span class="cap-tag">🏛️ Panchayat</span></div></div>
+      <div class="gallery-card" data-cat="facilities" onclick="openLightbox('images/Villlage_hospital.jpg','Village Hospital','Facilities')"><img src="images/Villlage_hospital.jpg" alt="Village hospital"><div class="gallery-caption"><div class="cap-title">Village Hospital</div><span class="cap-tag">🏥 Health</span></div></div>
+      <div class="gallery-card" data-cat="facilities" onclick="openLightbox('images/SBI_Bank.jpg','SBI Bank, Dantil','Facilities')"><img src="images/SBI_Bank.jpg" alt="SBI Bank"><div class="gallery-caption"><div class="cap-title">SBI Bank</div><span class="cap-tag">🏦 Banking</span></div></div>
+      <div class="gallery-card" data-cat="facilities" onclick="openLightbox('images/ATM_Bus-stand.jpg','ATM at Bus Stand','Facilities')"><img src="images/ATM_Bus-stand.jpg" alt="ATM"><div class="gallery-caption"><div class="cap-title">ATM at Bus Stand</div><span class="cap-tag">🏧 ATM</span></div></div>
+      <div class="gallery-card" data-cat="facilities" onclick="openLightbox('images/Main_Bus_Stand.jpg','Main Bus Stand','Facilities')"><img src="images/Main_Bus_Stand.jpg" alt="Bus Stand"><div class="gallery-caption"><div class="cap-title">Main Bus Stand</div><span class="cap-tag">🚌 Transport</span></div></div>
+      <div class="gallery-card" data-cat="facilities" onclick="openLightbox('images/Annpurna_Rasoi.jpg','Annpurna Rasoi','Facilities')"><img src="images/Annpurna_Rasoi.jpg" alt="Annpurna Rasoi"><div class="gallery-caption"><div class="cap-title">Annpurna Rasoi</div><span class="cap-tag">🍱 Facility</span></div></div>
+      <div class="gallery-card" data-cat="facilities" onclick="openLightbox('images/Bhoomi_Abhilekh_Kendra.jpg','Bhoomi Abhilekh Kendra','Facilities')"><img src="images/Bhoomi_Abhilekh_Kendra.jpg" alt="Bhoomi Abhilekh"><div class="gallery-caption"><div class="cap-title">Bhoomi Abhilekh Kendra</div><span class="cap-tag">📋 Facility</span></div></div>
+      <div class="gallery-card" data-cat="facilities" onclick="openLightbox('images/Kisan_Seva_Kendra.jpg','Kisan Seva Kendra','Facilities')"><img src="images/Kisan_Seva_Kendra.jpg" alt="Kisan Seva"><div class="gallery-caption"><div class="cap-title">Kisan Seva Kendra</div><span class="cap-tag">🌾 Facility</span></div></div>
+      <div class="gallery-card" data-cat="education" onclick="openLightbox('images/Govt_School.jpg','Government School','Education')"><img src="images/Govt_School.jpg" alt="Govt School"><div class="gallery-caption"><div class="cap-title">Government School</div><span class="cap-tag">🏫 Education</span></div></div>
+      <div class="gallery-card" data-cat="education" onclick="openLightbox('images/Anganwadi_Kendra.jpg','Anganwadi Kendra','Education')"><img src="images/Anganwadi_Kendra.jpg" alt="Anganwadi"><div class="gallery-caption"><div class="cap-title">Anganwadi Kendra</div><span class="cap-tag">👶 Education</span></div></div>
+      <div class="gallery-card" data-cat="education" onclick="openLightbox('images/Computer_Institute.jpg','Ganpati Computer Institute','Education')"><img src="images/Computer_Institute.jpg" alt="Computer Institute"><div class="gallery-caption"><div class="cap-title">Ganpati Computer Institute</div><span class="cap-tag">💻 Education</span></div></div>
+      <div class="gallery-card" data-cat="education" onclick="openLightbox('images/School_Playground_Big.jpg','School Playground','Education')"><img src="images/School_Playground_Big.jpg" alt="School Playground"><div class="gallery-caption"><div class="cap-title">School Playground</div><span class="cap-tag">🏫 Education</span></div></div>
+      <div class="gallery-card" data-cat="education" onclick="openLightbox('images/School_Rally.jpg','School Rally','Education')"><img src="images/School_Rally.jpg" alt="School Rally"><div class="gallery-caption"><div class="cap-title">School Rally</div><span class="cap-tag">🎉 Education</span></div></div>
+      <div class="gallery-card" data-cat="community" onclick="openLightbox('images/Dangal.jpg','Dangal — Wrestling Competition','Community')"><img src="images/Dangal.jpg" alt="Dangal"><div class="gallery-caption"><div class="cap-title">Dangal — Wrestling Competition</div><span class="cap-tag">🤼 Community</span></div></div>
+      <div class="gallery-card" data-cat="community" onclick="openLightbox('images/Holi_Dangal.jpg','Holi Dangal Celebration','Community')"><img src="images/Holi_Dangal.jpg" alt="Holi Dangal"><div class="gallery-caption"><div class="cap-title">Holi Dangal Celebration</div><span class="cap-tag">🎉 Festival</span></div></div>
+      <div class="gallery-card" data-cat="community" onclick="openLightbox('images/Gramin.jpg','Village Women','Community')"><img src="images/Gramin.jpg" alt="Village Women"><div class="gallery-caption"><div class="cap-title">Village Women — Community Life</div><span class="cap-tag">👥 Community</span></div></div>
+      <div class="gallery-card" data-cat="community" onclick="openLightbox('images/Running_Track.jpg','Running Track','Community')"><img src="images/Running_Track.jpg" alt="Running Track"><div class="gallery-caption"><div class="cap-title">Running Track</div><span class="cap-tag">🏃 Sports</span></div></div>
+      <div class="gallery-card" data-cat="community" onclick="openLightbox('images/Play_Ground.jpg','Village Play Ground','Community')"><img src="images/Play_Ground.jpg" alt="Play Ground"><div class="gallery-caption"><div class="cap-title">Village Play Ground</div><span class="cap-tag">⚽ Sports</span></div></div>
+      <div class="gallery-card" data-cat="community" onclick="openLightbox('images/School_Playground.jpg','Sports Ground','Community')"><img src="images/School_Playground.jpg" alt="Sports Ground"><div class="gallery-caption"><div class="cap-title">Sports Ground</div><span class="cap-tag">⚽ Sports</span></div></div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" onclick="closeLightbox()">
+    <button class="lb-close" onclick="closeLightbox()">✕</button>
+    <img id="lb-img" src="" alt="">
+    <div class="lb-caption" id="lb-caption"></div>
+    <div class="lb-sub" id="lb-sub">Dantil — A Great Village</div>
+  </div>
+
+  <!-- ══ CONTACT ══ -->
+  <div id="contact" class="section">
+    <div class="section-title"><span>📞</span> Contact & Location</div>
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title"><span>🏛️</span> Grampanchayat Office</div>
+        <div class="info-row"><div class="icon">📍</div><div id="c-address">Grampanchayat Dantil, Paota Tehsil, Jaipur District, Rajasthan — 303107</div></div>
+        <div class="info-row"><div class="icon">🕐</div><div id="c-hours">Office hours: Monday – Saturday, 10:00 AM to 4:00 PM</div></div>
+        <div class="info-row"><div class="icon">📞</div><div id="c-sarpanch-ph">Sarpanch: 992XXX8397</div></div>
+        <div class="info-row"><div class="icon">📞</div><div id="c-sec-ph">Secretary: 958XXX8565</div></div>
+        <div class="info-row"><div class="icon">📧</div><div id="c-email">Email: BDO.JAI.PAOTA@GMAIL.COM</div></div>
+      </div>
+      <div class="card">
+        <div class="card-title"><span>🌐</span> Follow the Village</div>
+        <div class="info-row"><div class="icon">📘</div><div id="c-fb">Facebook: <strong>Dantil A Great Village</strong></div></div>
+        <div class="info-row"><div class="icon">🌿</div><div id="c-web">Website: https://dantil.vercel.app</div></div>
+        <div class="info-row"><div class="icon">📍</div><div id="c-map">Village located in: Paota Tehsil, Jaipur</div></div>
+        <a href="https://www.google.com/maps?q=27.65906935945585,76.00946450892431" target="_blank" style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:14px;background:linear-gradient(135deg,#1a6b3a,#2d9b5a);color:#fff;text-decoration:none;padding:10px 16px;border-radius:10px;font-size:13px;font-weight:700">
+          <span>📍</span> View Dantil on Google Maps
+        </a>
+        <div style="margin-top:14px;border-radius:10px;overflow:hidden;border:2px solid #c8e6c9">
+          <iframe src="https://maps.google.com/maps?q=27.65906935945585,76.00946450892431&z=15&output=embed" width="100%" height="200" style="border:0;display:block" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:0">
+      <div class="card-title"><span>🆘</span> Emergency Helpline Numbers</div>
+      <div class="emergency-grid">
+        <div class="emergency-card"><div class="e-icon">🚔</div><div class="e-name">Police</div><div class="e-num">100</div></div>
+        <div class="emergency-card"><div class="e-icon">🚑</div><div class="e-name">Ambulance</div><div class="e-num">108</div></div>
+        <div class="emergency-card"><div class="e-icon">🚒</div><div class="e-name">Fire</div><div class="e-num">101</div></div>
+        <div class="emergency-card"><div class="e-icon">🏥</div><div class="e-name">Health</div><div class="e-num">104</div></div>
+        <div class="emergency-card"><div class="e-icon">👩‍🌾</div><div class="e-name">Women Help</div><div class="e-num">1091</div></div>
+        <div class="emergency-card"><div class="e-icon">👦</div><div class="e-name">Child Help</div><div class="e-num">1098</div></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end container -->
+
+<!-- EDIT BUTTON -->
+<div style="position:fixed;bottom:24px;right:24px;z-index:999">
+  <button class="btn btn-green" id="edit-toggle-btn" onclick="toggleEdit()" style="box-shadow:0 4px 16px rgba(0,0,0,.2);padding:12px 20px;font-size:14px">
+    ✏️ Edit This Page
+  </button>
+</div>
+
+<div id="toast">✅ Changes saved successfully!</div>
+
+<footer>
+  <p>🏡 <strong>Dantil — A Great Village</strong> &nbsp;|&nbsp; Official Village Website</p>
+  <p style="margin-top:6px">📘 Facebook: <a href="https://www.facebook.com" target="_blank" style="color:#4caf7a">Dantil A Great Village</a></p>
+  <p style="margin-top:6px;opacity:.6;font-size:12px">Last updated: <span id="last-updated">July 2025</span> &nbsp;|&nbsp; Made with ❤️ for our village</p>
+</footer>
+
+<script>
+// ── NAVIGATION ──
+function show(id, el) {
+  event.preventDefault();
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('visible'));
+  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+  document.getElementById(id).classList.add('visible');
+  el.classList.add('active');
+  window.scrollTo(0,0);
+}
+
+// ── GALLERY FILTER ──
+function filterGallery(cat, btn) {
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.gallery-card').forEach(card => {
+    card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'block' : 'none';
+  });
+}
+
+// ── LIGHTBOX ──
+function openLightbox(src, caption, sub) {
+  document.getElementById('lb-img').src = src;
+  document.getElementById('lb-caption').textContent = caption;
+  document.getElementById('lb-sub').textContent = sub + ' — Dantil Village';
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+}
+
+// ── EDIT MODE ──
+let editMode = false;
+const editableIds = ['village-name','village-sub','village-tagline','about-text',
+  'ann1','ann1-date','ann2','ann2-date','ann3','ann3-date',
+  'sarpanch-name','sarpanch-term','sarpanch-phone','sec-name','sec-hours','sec-phone',
+  'pop-total','pop-male','pop-female','pop-children','pop-youth','pop-senior',
+  'f-health1','f-health2','f-health3','f-water1','f-water2','f-water3',
+  'f-power1','f-power2','f-power3','f-conn1','f-conn2','f-conn3',
+  'f-bank1','f-bank2','f-bank3','f-other1','f-other2','f-other3',
+  'c-address','c-hours','c-sarpanch-ph','c-sec-ph','c-email','c-fb','c-web','c-map',
+  'last-updated'];
+
+function toggleEdit() {
+  editMode = !editMode;
+  const bar = document.getElementById('edit-bar');
+  const btn = document.getElementById('edit-toggle-btn');
+  if (editMode) {
+    bar.style.display = 'flex';
+    btn.textContent = '👁️ Preview Mode';
+    btn.style.background = '#856404';
+    editableIds.forEach(id => { const el = document.getElementById(id); if(el) el.contentEditable='true'; });
+  } else { exitEdit(); }
+}
+function exitEdit() {
+  editMode = false;
+  document.getElementById('edit-bar').style.display = 'none';
+  const btn = document.getElementById('edit-toggle-btn');
+  btn.textContent = '✏️ Edit This Page';
+  btn.style.background = '#1a6b3a';
+  editableIds.forEach(id => { const el = document.getElementById(id); if(el) el.contentEditable='false'; });
+}
+function saveChanges() {
+  exitEdit();
+  const toast = document.getElementById('toast');
+  toast.style.display = 'block';
+  setTimeout(() => toast.style.display = 'none', 3000);
+  const now = new Date();
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  document.getElementById('last-updated').textContent = months[now.getMonth()] + ' ' + now.getFullYear();
+}
+</script>
+</body>
+</html>
